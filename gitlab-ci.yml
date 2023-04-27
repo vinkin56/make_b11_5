@@ -1,0 +1,8 @@
+---
+  deploy:
+    script:
+      - cp $CI_PROJECT_DIR/script.sh /tmp/script.sh 
+      - /tmp/script.sh
+    rules:
+    - changes:
+        - script.sh
